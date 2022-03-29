@@ -3,7 +3,7 @@ import torchvision
 import torch.nn as nn
 
 class Keypoints(nn.Module):
-    def __init__(self, num_classes, img_height=353, img_width=257, resnet=18):
+    def __init__(self, num_classes, img_height=353, img_width=257, resnet=101):
         super(Keypoints, self).__init__()
         
         self.num_classes = num_classes
